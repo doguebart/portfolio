@@ -65,14 +65,6 @@ const StarryBackground: React.FC = () => {
         collisions: {
           enable: true,
         },
-        move: {
-          direction: "top",
-          enable: true,
-          outModes: "bounce",
-          random: false,
-          speed: 2,
-          straight: false,
-        },
         number: {
           density: {
             enable: true,
