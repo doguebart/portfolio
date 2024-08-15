@@ -337,6 +337,26 @@ export const App = () => {
                 title="Chromus Pinturas"
                 content="Desenvolvi a landing page para a Chromus Pinturas como freelancer, utilizando HTML, Tailwind CSS e JavaScript. A página foi projetada com HTML semântico para melhorar a acessibilidade e otimizada para SEO, garantindo melhor visibilidade nos mecanismos de busca. Com um design moderno e responsivo, a landing page oferece uma experiência de usuário envolvente e eficiente, refletindo a qualidade e o profissionalismo da Chromus Pinturas."
               />
+              <ProjectCard
+                link="https://github.com/doguebart/Get-a-Pet.git"
+                tags={["Backend", "APIs RESTful"]}
+                technologies={[
+                  "Node.js",
+                  "Fastify",
+                  "TypeScript",
+                  "Prisma",
+                  "PostgreSQL",
+                  "Docker",
+                  "Fastify Cookies",
+                  "JSON Web Token",
+                  "Vitest",
+                  "SOLID",
+                  "Clean Architecture",
+                ]}
+                image="getApet.jpg"
+                title="getApet"
+                content="O projeto Get A Pet é uma plataforma inovadora que facilita a conexão entre ONGs, petshops e pessoas interessadas em adotar animais de estimação. Com funcionalidades abrangentes, a plataforma permite que organizações criem contas, façam login, e gerenciem suas informações e os perfis dos animais disponíveis para adoção. As ONGs e petshops podem cadastrar, editar e remover informações sobre os animais, além de atualizar o status de adoção para 'adotado' quando necessário. Usuários da plataforma têm acesso a uma lista completa de todos os animais disponíveis para adoção, podendo filtrar por nome e visualizar detalhes específicos de cada animal, incluindo espécie, tamanho, idade e características adicionais. Além disso, é possível visualizar informações detalhadas das organizações, como contato e descrição, promovendo uma adoção consciente e informada. Get A Pet simplifica o processo de adoção, conectando animais a novos lares de maneira eficiente e organizada."
+              />
             </div>
           </div>
         </section>
@@ -358,6 +378,11 @@ export const App = () => {
                 img="node_rocketseat.png"
                 link="https://app.rocketseat.com.br/certificates/87672a07-e89c-45fb-b631-514d1f81b5e0"
                 title="Especialista em Node.js"
+              />
+              <CertificateCard
+                img="figma_rockeseat.png"
+                link="https://app.rocketseat.com.br/certificates/e70c26d8-ebdb-4c89-ad8d-05eb9ecc70fa"
+                title="Figma"
               />
             </div>
           </div>
