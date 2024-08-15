@@ -29,7 +29,7 @@ export const ProjectsCarousel = () => {
               "UI/UX",
               "Figma",
             ]}
-            image="douglas.png"
+            image="portfolio.jpg"
             title="Portfólio"
             content="Desenvolvi este portfólio com uma combinação moderna de tecnologias e ferramentas. Utilizei React.js e TypeScript para criar uma interface interativa e dinâmica, enquanto o Tailwind CSS garantiu um design elegante e responsivo. A integração do React Hook Form proporcionou uma experiência de usuário fluida no formulário de contato, e as práticas de UI/UX aliadas ao Figma ajudaram a moldar uma interface intuitiva e agradável."
           />
@@ -72,7 +72,7 @@ export const ProjectsCarousel = () => {
               "UI/UX",
               "Figma",
             ]}
-            image="douglas.png"
+            image="chromus.png"
             title="Chromus Pinturas"
             content="Desenvolvi a landing page para a Chromus Pinturas como freelancer, utilizando HTML, Tailwind CSS e JavaScript. A página foi projetada com HTML semântico para melhorar a acessibilidade e otimizada para SEO, garantindo melhor visibilidade nos mecanismos de busca. Com um design moderno e responsivo, a landing page oferece uma experiência de usuário envolvente e eficiente, refletindo a qualidade e o profissionalismo da Chromus Pinturas."
           />
