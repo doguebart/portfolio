@@ -1,10 +1,16 @@
 import { useForm } from "react-hook-form";
-import { Send } from "lucide-react";
+import { AlertCircle, CheckCircle, Loader, Send } from "lucide-react";
 import { formSchema } from "../utils/zod-form-schema-validation";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import emailjs from "@emailjs/browser";
+import { useEffect, useState } from "react";
 
 export const ContactForm = () => {
+  const [isError, setIsError] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   type formSchema = z.infer<typeof formSchema>;
 
   const {
@@ -16,10 +22,52 @@ export const ContactForm = () => {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = (data: formSchema) => {
-    console.log(data);
-    reset();
+  const onSubmit = async (data: formSchema) => {
+    try {
+      setIsLoading(true);
+
+      await emailjs.send(
+        import.meta.env.VITE_SERVICE,
+        import.meta.env.VITE_TEMPLATE,
+        {
+          from_name: data.name,
+          from_email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        import.meta.env.VITE_USER_ID
+      );
+      setIsLoading(false);
+      setIsError(false);
+      setIsSuccess(true);
+      reset();
+    } catch (error: unknown) {
+      console.log(error);
+      setIsLoading(false);
+      setIsError(true);
+      reset();
+    }
   };
+
+  useEffect(() => {
+    if (isError) {
+      const timer = setTimeout(() => {
+        setIsError(false);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isError]);
+
+  useEffect(() => {
+    if (isSuccess) {
+      const timer = setTimeout(() => {
+        setIsSuccess(false);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isSuccess]);
 
   return (
     <form
@@ -27,6 +75,23 @@ export const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col gap-6"
     >
+      {isError && (
+        <div className="p-4 w-full md:w-fit mx-auto rounded-xl max-h-full flex items-center justify-center gap-4 bg-red-500 animate-menu-slide-in">
+          <AlertCircle className="size-6 text-white" />
+          <span className="text-white font-medium">
+            Ops! Tente novamente mais tarde.
+          </span>
+        </div>
+      )}
+
+      {isSuccess && (
+        <div className="p-4 w-full md:w-fit mx-auto rounded-xl max-h-full flex items-center justify-center gap-4 bg-green-500 animate-menu-slide-in">
+          <CheckCircle className="size-6 text-white" />
+          <span className="text-white font-medium">
+            Mensagem enviada com sucesso!
+          </span>
+        </div>
+      )}
       <div className="flex flex-col gap-1">
         <label className="text-neutral-600 font-medium">Nome completo</label>
         <input
@@ -84,10 +149,21 @@ export const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className="p-4 rounded-xl flex justify-center text-lg items-center gap-2 bg-blue-800 hover:bg-opacity-90 duration-150"
+        disabled={isLoading}
+        className={`p-4 rounded-xl flex justify-center text-lg items-center gap-2 bg-blue-800 hover:bg-opacity-90 duration-150 ${
+          isLoading && "bg-opacity-50"
+        }`}
       >
-        Enviar
-        <Send className="size-5" />
+        {isLoading ? (
+          <div className="flex justify-center items-center">
+            <Loader className="size-5 animate-spin" />
+          </div>
+        ) : (
+          <div className="flex justify-center items-center gap-2">
+            Enviar
+            <Send className="size-5" />
+          </div>
+        )}
       </button>
     </form>
   );

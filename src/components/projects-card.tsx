@@ -43,7 +43,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <a
               href={props.link}
               target="_blank"
-              className="flex items-center justify-center size-14 bg-neutral-950 rounded-tl-xl absolute bottom-[-1px] right-[-1px]"
+              className="flex items-center justify-center size-14 bg-neutral-950 rounded-tl-xl absolute bottom-0 right-0"
             >
               <ExternalLink className="size-8 text-white" />
             </a>
