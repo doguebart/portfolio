@@ -54,7 +54,6 @@ export const ProjectsCarousel = () => {
               "SOLID",
               "Clean Architecture",
             ]}
-            image="douglas.png"
             title="QuesTYon"
             content="O QuesTYon é um fórum de perguntas e respostas que oferece aos usuários a oportunidade de criar tópicos sobre uma ampla variedade de temas. Além de iniciar discussões, os usuários podem interagir com os tópicos de outros através da criação de respostas e comentários."
           />

@@ -1,4 +1,5 @@
 import {
+  CameraOff,
   CheckCircle,
   ChevronDown,
   ChevronUp,
@@ -8,7 +9,7 @@ import { useState } from "react";
 
 interface ProjectCardProps {
   link?: string;
-  image: string;
+  image?: string;
   title: string;
   content: string;
   tags: string[];
@@ -31,22 +32,39 @@ export const ProjectCard = (props: ProjectCardProps) => {
       data-aos="fade-up"
       className="w-full min-h-80 max-h-full rounded-xl bg-neutral-950 p-8 flex flex-col gap-6 shadow"
     >
-      <div className="relative w-full h-60 lg:h-60 rounded-xl">
-        <img
-          src={props.image}
-          alt="project image"
-          className="object-cover w-full h-full rounded-xl"
-        />
-        {props.link && (
-          <a
-            href={props.link}
-            target="_blank"
-            className="flex items-center justify-center size-14 bg-neutral-950 rounded-tl-xl absolute bottom-[-1px] right-[-1px]"
-          >
-            <ExternalLink className="size-8 text-white" />
-          </a>
-        )}
-      </div>
+      {props.image ? (
+        <div className="relative w-full h-60 lg:h-60 rounded-xl">
+          <img
+            src={props.image}
+            alt="project image"
+            className="object-cover w-full h-full rounded-xl"
+          />
+          {props.link && (
+            <a
+              href={props.link}
+              target="_blank"
+              className="flex items-center justify-center size-14 bg-neutral-950 rounded-tl-xl absolute bottom-[-1px] right-[-1px]"
+            >
+              <ExternalLink className="size-8 text-white" />
+            </a>
+          )}
+        </div>
+      ) : (
+        <div className="relative w-full h-60 lg:h-60 rounded-xl">
+          <div className="object-cover w-full h-full rounded-xl flex items-center justify-center border border-neutral-800">
+            <CameraOff className="size-10 text-neutral-600" />
+          </div>
+          {props.link && (
+            <a
+              href={props.link}
+              target="_blank"
+              className="flex items-center justify-center size-14 bg-neutral-950 rounded-tl-xl absolute bottom-[-1px] right-[-1px] border-t border-l border-neutral-800"
+            >
+              <ExternalLink className="size-8 text-white" />
+            </a>
+          )}
+        </div>
+      )}
       <div className="w-full flex flex-col gap-4">
         <div className="w-full flex items-center gap-2">
           {props.tags.map((tag) => (
