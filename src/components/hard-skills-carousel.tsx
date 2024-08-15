@@ -3,264 +3,264 @@ export const HardSkillsCarousel = () => {
     <div className="flex space-x-8 animate-loop-scroll">
       <div className="flex space-x-8 animate-loop-scroll">
         <img
-          src="../../public/tech-icons/reactjs.svg"
+          src="/tech-icons/reactjs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/nodejs.svg"
+          src="/tech-icons/nodejs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/typescript.svg"
+          src="/tech-icons/typescript.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/js.svg"
+          src="/tech-icons/js.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/nestjs.svg"
+          src="/tech-icons/nestjs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/html5.svg"
+          src="/tech-icons/html5.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/css3.svg"
+          src="/tech-icons/css3.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/tailwindcss.svg"
+          src="/tech-icons/tailwindcss.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/prisma.svg"
+          src="/tech-icons/prisma.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
 
         <img
-          src="../../public/tech-icons/postgresql.svg"
+          src="/tech-icons/postgresql.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/vitest.svg"
+          src="/tech-icons/vitest.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/zod.svg"
+          src="/tech-icons/zod.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/docker.svg"
+          src="/tech-icons/docker.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/postman.svg"
+          src="/tech-icons/postman.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/figma.svg"
+          src="/tech-icons/figma.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/swagger.svg"
+          src="/tech-icons/swagger.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/git.svg"
+          src="/tech-icons/git.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
       </div>
       <div className="flex space-x-8 animate-loop-scroll" aria-hidden="true">
         <img
-          src="../../public/tech-icons/reactjs.svg"
+          src="/tech-icons/reactjs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/nodejs.svg"
+          src="/tech-icons/nodejs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/typescript.svg"
+          src="/tech-icons/typescript.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/js.svg"
+          src="/tech-icons/js.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/nestjs.svg"
+          src="/tech-icons/nestjs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/html5.svg"
+          src="/tech-icons/html5.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/css3.svg"
+          src="/tech-icons/css3.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/tailwindcss.svg"
+          src="/tech-icons/tailwindcss.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/prisma.svg"
+          src="/tech-icons/prisma.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
 
         <img
-          src="../../public/tech-icons/postgresql.svg"
+          src="/tech-icons/postgresql.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/vitest.svg"
+          src="/tech-icons/vitest.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/zod.svg"
+          src="/tech-icons/zod.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/docker.svg"
+          src="/tech-icons/docker.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/postman.svg"
+          src="/tech-icons/postman.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/figma.svg"
+          src="/tech-icons/figma.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/swagger.svg"
+          src="/tech-icons/swagger.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/git.svg"
+          src="/tech-icons/git.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
       </div>
       <div className="flex space-x-8 animate-loop-scroll" aria-hidden="true">
         <img
-          src="../../public/tech-icons/reactjs.svg"
+          src="/tech-icons/reactjs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/nodejs.svg"
+          src="/tech-icons/nodejs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/typescript.svg"
+          src="/tech-icons/typescript.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/js.svg"
+          src="/tech-icons/js.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/nestjs.svg"
+          src="/tech-icons/nestjs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/html5.svg"
+          src="/tech-icons/html5.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/css3.svg"
+          src="/tech-icons/css3.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/tailwindcss.svg"
+          src="/tech-icons/tailwindcss.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/prisma.svg"
+          src="/tech-icons/prisma.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
 
         <img
-          src="../../public/tech-icons/postgresql.svg"
+          src="/tech-icons/postgresql.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/vitest.svg"
+          src="/tech-icons/vitest.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/zod.svg"
+          src="/tech-icons/zod.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/docker.svg"
+          src="/tech-icons/docker.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/postman.svg"
+          src="/tech-icons/postman.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/figma.svg"
+          src="/tech-icons/figma.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/swagger.svg"
+          src="/tech-icons/swagger.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/git.svg"
+          src="/tech-icons/git.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
@@ -270,88 +270,88 @@ export const HardSkillsCarousel = () => {
         aria-hidden="true"
       >
         <img
-          src="../../public/tech-icons/reactjs.svg"
+          src="/tech-icons/reactjs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/nodejs.svg"
+          src="/tech-icons/nodejs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/typescript.svg"
+          src="/tech-icons/typescript.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/js.svg"
+          src="/tech-icons/js.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/nestjs.svg"
+          src="/tech-icons/nestjs.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/html5.svg"
+          src="/tech-icons/html5.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/css3.svg"
+          src="/tech-icons/css3.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/tailwindcss.svg"
+          src="/tech-icons/tailwindcss.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/prisma.svg"
+          src="/tech-icons/prisma.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
 
         <img
-          src="../../public/tech-icons/postgresql.svg"
+          src="/tech-icons/postgresql.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/vitest.svg"
+          src="/tech-icons/vitest.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/zod.svg"
+          src="/tech-icons/zod.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/docker.svg"
+          src="/tech-icons/docker.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/postman.svg"
+          src="/tech-icons/postman.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/figma.svg"
+          src="/tech-icons/figma.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/swagger.svg"
+          src="/tech-icons/swagger.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
         <img
-          src="../../public/tech-icons/git.svg"
+          src="/tech-icons/git.svg"
           alt="hard-skill image"
           className="min-w-14 max-w-14"
         />
