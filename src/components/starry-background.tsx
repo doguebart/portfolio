@@ -33,7 +33,7 @@ const StarryBackground: React.FC = () => {
             mode: "push",
           },
           onHover: {
-            enable: true,
+            enable: false,
             mode: "repulse",
           },
           resize: {

@@ -15,12 +15,6 @@ export const ContactForm = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    console.log("Service ID:", serviceId);
-    console.log("Template ID:", templateId);
-    console.log("User ID:", userId);
-  }, []);
-
   type formSchema = z.infer<typeof formSchema>;
 
   const {
