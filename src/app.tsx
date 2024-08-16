@@ -283,7 +283,7 @@ export const App = () => {
             <div className="lg:hidden">
               <ProjectsCarousel />
             </div>
-            <div className="hidden lg:grid grid-cols-2 xl:grid-cols-3 gap-4">
+            <div className="hidden lg:grid grid-cols-2 xl:grid-cols-2 gap-10">
               <ProjectCard
                 tags={["Frontend"]}
                 technologies={[
