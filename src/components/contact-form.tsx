@@ -6,10 +6,20 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 
+const serviceId = import.meta.env.VITE_SERVICE;
+const templateId = import.meta.env.VITE_TEMPLATE;
+const userId = import.meta.env.VITE_USER_ID;
+
 export const ContactForm = () => {
   const [isError, setIsError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    console.log("Service ID:", serviceId);
+    console.log("Template ID:", templateId);
+    console.log("User ID:", userId);
+  }, []);
 
   type formSchema = z.infer<typeof formSchema>;
 
@@ -27,22 +37,21 @@ export const ContactForm = () => {
       setIsLoading(true);
 
       await emailjs.send(
-        import.meta.env.VITE_SERVICE,
-        import.meta.env.VITE_TEMPLATE,
+        serviceId,
+        templateId,
         {
           from_name: data.name,
           from_email: data.email,
           subject: data.subject,
           message: data.message,
         },
-        import.meta.env.VITE_USER_ID
+        userId
       );
       setIsLoading(false);
       setIsError(false);
       setIsSuccess(true);
       reset();
-    } catch (error: unknown) {
-      console.log(error);
+    } catch {
       setIsLoading(false);
       setIsError(true);
       reset();
